@@ -16,7 +16,7 @@ let uploadStatus: 'loading' | 'success' | 'error';
 let textFormat: 'uppercase' | 'lowercase' | 'capitalize';
 
 function sum(a: number, b: number): number {
-  return a + b as number;
+  return a + b;
 }
 
 function formatText(text: string, format: 'uppercase' | 'lowercase' | 'capitalize'): string {
