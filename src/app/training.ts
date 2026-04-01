@@ -5,7 +5,7 @@ interface IUser {
   nickname?: string;
 }
 
-interface IUserLogin extends IUser {
+interface IRegisteredUser extends IUser {
   login: string;
   password: string;
   email: string;
@@ -15,11 +15,11 @@ let uploadStatus: 'loading' | 'success' | 'error';
 
 let textFormat: 'uppercase' | 'lowercase' | 'capitalize';
 
-function getSum(a: number, b: number): number {
-  return a + b;
+function sum(a: number, b: number): number {
+  return a + b as number;
 }
 
-function formatText(text: string, format: 'uppercase' | 'lowercase' | 'capitalize') {
+function formatText(text: string, format: 'uppercase' | 'lowercase' | 'capitalize'): string {
   if (format === 'uppercase') {
     return text.toUpperCase();
   } else if (format === 'lowercase') {
@@ -41,4 +41,4 @@ const users: IUser[] = [
   { name: 'Maballs Ich of Corse', age: 31, location: 'Grand Line' }
 ];
 
-const pirates = users.filter(user => user.location === 'Grand Line');
+const pirates: IUser[] = users.filter((user: IUser) => user.location === 'Grand Line');
