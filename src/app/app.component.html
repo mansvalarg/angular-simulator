@@ -2,18 +2,18 @@
   <div class="header-top">
     <div class="container">
       <div class="header-logo">
-        <img class="logo-img" src="/images/rumtibet-img.png" alt="">
+        <img class="logo-img" src="/images/logo-mountains.svg" alt="">
         <h1 class="logo-text">РУМТИБЕТ</h1>
       </div>
       <nav class="header-nav">
-          <a>Главная</a>
-          <a>Про гида</a>
-          <a>Программа тура</a>
-          <a>Стоимость</a>
-          <a>Блог</a>
-          <a>Контакты</a>
+          <a id="nav-main">Главная</a>
+          <a id="nav-guide">Про гида</a>
+          <a id="nav-program">Программа тура</a>
+          <a id="nav-price">Стоимость</a>
+          <a id="nav-blog">Блог</a>
+          <a id="nav-contacts">Контакты</a>
       </nav>
-      <button>Консультация</button>
+      <button id="button-consultation">Консультация</button>
     </div>
   </div>
   <section class="header-main">
@@ -21,22 +21,22 @@
     с командой единомышленников</h1>
     <div class="selection-container">
       <div class="selection">
-        <select name="" id="" class="selection-field white-text">
-          <option value="">Локация для тура</option>
+        <select id="tour-location" class="selection-field white-text">
+          <option>Локация для тура</option>
         </select>
-        <label for="">выберите из списка</label>
+        <label>выберите из списка</label>
       </div>
       <div class="selection">
-        <input type="date" data-placeholder="Дата похода" class="selection-field selection-date date-placeholder-text" required>
+        <input id="date-selection" type="date" data-placeholder="Дата похода" class="selection-field selection-date date-placeholder-text" required>
         <label for="">укажите дату</label>
       </div>
       <div class="selection">
-        <select name="" id="" class="selection-field white-text">
-          <option value="">Участники</option>
+        <select id="participants" class="selection-field white-text">
+          <option>Участники</option>
         </select>
-        <label for="">выберите из списка</label>
+        <label>выберите из списка</label>
       </div>
-      <button class="find-program-button white-text">Найти программу</button>
+      <button id="find-program" class="find-program-button white-text">Найти программу</button>
     </div>
   </section>
 </header>

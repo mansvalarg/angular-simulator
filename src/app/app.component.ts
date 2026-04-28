@@ -9,24 +9,25 @@ import { Color } from '../enums/Color.js';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+
   constructor() {
     this.saveLastVisit();
     this.saveVisitCount();
   }
 
-  checkColor(value: Color): boolean {
-    return value === Color.RED || value === Color.GREEN || value === Color.BLUE;
+  hasColor(value: Color): boolean {
+    return [Color.RED, Color.GREEN, Color.BLUE].includes(value);
   }
 
-  saveLastVisit() {
-    const now = new Date().toString();
+  saveLastVisit(): void {
+    const now: string = new Date().toString();
     localStorage.setItem('lastVisit', now);
   }
 
-  saveVisitCount() {
-    const count = localStorage.getItem('visitCount');
-    const newCount = Number(count) + 1;
-    localStorage.setItem('visitCount', newCount.toString());
+  saveVisitCount(): void {
+    const count = localStorage.getItem('visit-count');
+    const newCount: number = Number(count) + 1;
+    localStorage.setItem('visit-count', newCount.toString());
   }
 
 }

@@ -14,11 +14,11 @@ export class Collection<T> {
     return this.items[index];
   }
 
-  eraseAll() {
+  clear(): void {
     this.items = [];
   }
 
-  deleteItem(index:number) {
+  deleteItem(index:number): void {
     this.items.splice(index, 1);
   }
 
@@ -28,5 +28,5 @@ export class Collection<T> {
 
 }
 
-const guns = new Collection<string>(['M2HB', 'M1911', 'D50', 'SW500']);
-const magSize = new Collection<number>([100, 7, 8]);
+const guns: Collection<string> = new Collection<string>(['M2HB', 'M1911', 'D50', 'SW500']);
+const magSize: Collection<number> = new Collection<number>([100, 7, 8]);
