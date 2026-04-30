@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@use './fonts';
+@use './normalize';
+
+* {
+  font-family: 'Nunito Sans';
+}
+
+.container {
+  display: block;
+  width: 1180px;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #F2BE22;
+  --white-color: #fff;
+}
+
+.white-text {
+  color: var(--white-color);
+}

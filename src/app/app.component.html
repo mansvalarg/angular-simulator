@@ -1,1 +1,42 @@
-<h1 style="display: flex; justify-content: center; font-family: sans-serif;">NGX SIMULATOR</h1>
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-logo">
+        <img class="logo-img" src="/images/logo-mountains.svg" alt="">
+        <h1 class="logo-text">{{ companyName }}</h1>
+      </div>
+      <nav class="header-nav">
+          <a id="nav-main">Главная</a>
+          <a id="nav-guide">Про гида</a>
+          <a id="nav-program">Программа тура</a>
+          <a id="nav-price">Стоимость</a>
+          <a id="nav-blog">Блог</a>
+          <a id="nav-contacts">Контакты</a>
+      </nav>
+      <button id="button-consultation">Консультация</button>
+    </div>
+  </div>
+  <section class="header-main">
+    <h1 class="header-main-title">Насладись прогулкой в горах
+    с командой единомышленников</h1>
+    <div class="selection-container">
+      <div class="selection">
+        <select id="tour-location" class="selection-field white-text">
+          <option>Локация для тура</option>
+        </select>
+        <label>выберите из списка</label>
+      </div>
+      <div class="selection">
+        <input id="date-selection" type="date" data-placeholder="Дата похода" class="selection-field selection-date date-placeholder-text" required>
+        <label for="">укажите дату</label>
+      </div>
+      <div class="selection">
+        <select id="participants" class="selection-field white-text">
+          <option>Участники</option>
+        </select>
+        <label>выберите из списка</label>
+      </div>
+      <button id="find-program" class="find-program-button white-text">Найти программу</button>
+    </div>
+  </section>
+</header>
